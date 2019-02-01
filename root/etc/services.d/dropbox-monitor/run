@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+export HOME=/dropbox
+export LD_PRELOAD=/usr/local/lib/libdropbox_fs_fix.so
+s6-setuidgid abc /usr/local/bin/dropbox status
+sleep 30

@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bash
+
+chown abc:abc \
+	/app \
+	/config \
+	/data \
+	/dropbox \
+	/dropbox/.dropbox \
+	/dropbox/Dropbox
+
+chown -R abc:abc \
+	/dropbox/.dropbox-dist
